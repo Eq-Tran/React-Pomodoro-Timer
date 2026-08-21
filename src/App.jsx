@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Timer from './components/Timer.jsx';
+import ToDoList from './components/ToDoList.jsx';
 
 // main application function
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
       <div>
         <Timer />
+        <ToDoList />
       </div>
     </>
   )
