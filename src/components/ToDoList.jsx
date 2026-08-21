@@ -5,11 +5,13 @@ const ToDoList = () => {
 
     function handleChange(e) {
         setTask(e.target.value);
+        
     }
 
     function handleSubmit(e) {
         e.preventDefault();
         console.log(task);
+        setTask('');
     }
 
 	return (
