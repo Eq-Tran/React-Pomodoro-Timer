@@ -24,7 +24,7 @@ const ToDoList = () => {
                     value={task}
                     onChange={handleChange} />
                 </label>
-                <input type="submit"/>
+                <input type="submit" value="Add"/>
             </form>
 		</section>
 	);
