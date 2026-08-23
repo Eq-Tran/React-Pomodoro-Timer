@@ -4,6 +4,14 @@ import Timer from './components/Timer.jsx';
 import ToDoList from './components/ToDoList.jsx';
 import ListArea from './components/ListArea.jsx';
 
+/*
+ * This Pomodoro timer application is an intro to React project. 
+ * It also serves as an experiment into agentic "vibe" coding. not all code is AI generated\
+ * 
+ */
+
+
+
 // main application function
 function App() {
   // Keep tasks in the shared parent so both child components can access them.
