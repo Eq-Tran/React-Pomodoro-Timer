@@ -46,6 +46,18 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+/* Keep controls visually separated from one another. */
+input,
+button {
+  margin: 5px;
+}
+
+/* Bring the primary controls closer together. */
+button,
+input[type="submit"] {
+  margin: 2.5px;
+}
 button:hover {
   border-color: #646cff;
 }

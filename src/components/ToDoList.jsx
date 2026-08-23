@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const ToDoList = () => {
+// Pass submitted task text to the parent instead of owning the task list here.
+const ToDoList = ({ onTaskAdd }) => {
     const [task, setTask] = useState("");
 
     function handleChange(e) {
@@ -10,7 +11,10 @@ const ToDoList = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(task);
+        if (task.trim()) {
+            // Ignore empty submissions and send valid task data to App.
+            onTaskAdd(task.trim());
+        }
         setTask('');
     }
 
