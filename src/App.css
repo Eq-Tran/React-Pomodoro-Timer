@@ -5,6 +5,35 @@
   text-align: center;
 }
 
+.list-area {
+  text-align: left;
+}
+
+.list-area ul {
+  margin: 0;
+}
+
+/* Display each task and its controls in one aligned row. */
+.list-area li {
+  display: flex;
+  align-items: center;
+}
+
+/* Keep the checkbox and task text together while allowing the button to move right. */
+.list-item-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Push each delete button to the end of its task row. */
+.list-area li button {
+  margin-left: auto;
+  /* Reduce delete button padding and text size by approximately 20%. */
+  padding: 0.48em 0.96em;
+  font-size: 0.8em;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
