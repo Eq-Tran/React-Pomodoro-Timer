@@ -19,10 +19,8 @@ function timesUp(){
 function Timer(){
 
     // time setup
-    const startTimeStamp = Date.now();
     const durationMs = 5 * 60 * 1000; // countdown time in milliseconds (5 minutes = 300 secounds = 30000 milliseconds)
-    const endTimeStamp = startTimeStamp + durationMs;
-    let targetTimeStamp = endTimeStamp - startTimeStamp;
+    const targetTimeStamp = durationMs;
 
     // Hooks
     let [time , setTime] = useState(targetTimeStamp);
@@ -50,7 +48,7 @@ function Timer(){
             
         };
 
-    }, [isRunning, time]);
+    }, [isRunning, time, play]);
 
 
     return(

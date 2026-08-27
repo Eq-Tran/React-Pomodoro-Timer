@@ -11,6 +11,7 @@
 
 .list-area ul {
   margin: 0;
+  padding-left: 0;
 }
 
 /* Display each task and its controls in one aligned row. */
@@ -24,6 +25,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.list-item-label input[type="checkbox"] {
+  margin-left: 0;
 }
 
 /* Push each delete button to the end of its task row. */
